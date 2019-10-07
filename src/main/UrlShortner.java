@@ -1,12 +1,10 @@
 package main;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class UrlShortner {
 	private char[] alphaNums = new char[62];
-	HashMap<String, String> mUrls = new HashMap();
-	
+	HashMap<String, String> mUrls = new HashMap<String, String>();
 	
 	
 	public UrlShortner() {
@@ -41,7 +39,8 @@ public class UrlShortner {
 		return ret;
 	}
 	
-	public String expand(String s) {
+	public String restore(String s) {
+		
 		return mUrls.get(s);
 	}
 
